@@ -23,7 +23,7 @@ namespace tnt.lsdwebsite.Controllers
             {
                 SmtpClient client = new SmtpClient();
                 MailMessage mail = new MailMessage();
-                mail.To.Add("nate.tripp13448@gmail.com");
+                mail.To.Add("email@gmail.com");
                 mail.Subject = "LSD";
                 mail.Body = form.name + "\n" +
                     form.businessName + "\n" +
