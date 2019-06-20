@@ -2,67 +2,138 @@
 for details on configuring this project to bundle and minify static web assets. */
 
 a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
 }
 
 /* Sticky footer styles
 -------------------------------------------------- */
-html {
-  font-size: 14px;
+html, body {
+    font-size: 14px;
+    margin: 0;
+    height: 100%;
 }
+
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .border-top {
-  border-top: 1px solid #e5e5e5;
+    border-top: 2px solid #111;
 }
+
 .border-bottom {
-  border-bottom: 1px solid #e5e5e5;
+    border-bottom: 2px solid #111;
 }
 
 .box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
 button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
+    font-size: 1rem;
+    line-height: inherit;
 }
 
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
-}
 
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  line-height: 60px; /* Vertically center the text there */
+    bottom: 0px;
+    width: 100%;
+    white-space: nowrap;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px; /* Vertically center the text there */
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 0px;
-    padding-right: 0px;
-    background-color: #71c7f9;
+
+
+
+/*tnt css*/
+
+.tnt-parallax {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-.tnt-img {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 7px;
+.tnt-home-banner-img {
+    background-image: url("/images/banner.png");
+    min-height: 500px;
+    background-size: cover;
+}
+
+.tnt-home-design-drawing {
+    background-image: url("/images/design_drawing.png");
+    height: 100%;
+}
+
+.tnt-home-design-parts-list {
+    background-image: url("/images/design_parts_list.png");
+    height: 100%;
+}
+
+.tnt-home-design-complete {
+    background-image: url("/images/design_complete.png");
+    height: 100%;
+}
+
+.tnt-caption {
+    position: absolute;
+    left: 0;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+    .tnt-caption span.tnt-border {
+        background-image: radial-gradient(rgba(17,17,17,1), rgba(0,0,0,.4));
+        color: #fff;
+        border-radius: 15px;
+        padding: 18px;
+        font-size: 3em;
+    }
+
+.tnt-column {
+    position: absolute;
+    height: inherit;
+    padding: 80px 8vw;
+    width: 80vw;
+    background-image: linear-gradient(to right, rgba(17,17,17,.7), rgba(0,0,0,0));
+}
+
+    .tnt-column div.tnt-column-text {
+        /*text-shadow: 3px 3px 5px rgba(17,17,17,1);*/
+        text-shadow: -1px -1px 5px rgba(17,17,17,1), 1px -1px 5px rgba(17,17,17,1), -1px 1px 5px rgba(17,17,17,1), 1px 1px 5px rgba(17,17,17,1);
+        color: rgba(255,255,255,1);
+        width: 30vw;
+        margin-top: 15%;
+    }
+
+.tnt-column-text span.tnt-column-text-header {
+    font-size: 2em;
+}
+
+.tnt-column-text span.tnt-column-text-body {
+    font-size: 1.2em;
+    text-align: justify
+}
+
+@media (max-width:1100px) {
+
+    .tnt-column div.tnt-column-text {
+        width: 50vw;
+    }
+}
+
+@media (max-width:1350px) {
+    .tnt-parallax {
+        background-size: cover;
+    }
 }
