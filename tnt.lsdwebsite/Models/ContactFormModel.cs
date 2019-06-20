@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Web;
+using System.Threading.Tasks;
 
 namespace tnt.lsdwebsite.Models
 {
@@ -19,7 +19,7 @@ namespace tnt.lsdwebsite.Models
         [Required]
         [Phone]
         [DisplayName("Phone number")]
-        public string phoneNumber{ get; set; }
+        public string phoneNumber { get; set; }
 
         [Required]
         [EmailAddress]
@@ -28,6 +28,6 @@ namespace tnt.lsdwebsite.Models
 
         [DisplayName("Questions and inquiries")]
         [DataType(DataType.MultilineText)]
-        public string message{ get; set; }
+        public string message { get; set; }
     }
 }
