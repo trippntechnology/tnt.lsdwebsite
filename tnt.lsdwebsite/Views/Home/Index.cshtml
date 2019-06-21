@@ -1,6 +1,6 @@
 ﻿@model tnt.lsdwebsite.Models.ContactFormModel
 @{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Home";
 }
 
 <div class="tnt-parallax tnt-home-banner-img">
@@ -8,15 +8,17 @@
         <span class="tnt-border">Landscape Sprinkler Designer</span>
     </div>
 </div>
+
+@*Above banner view*@
 <div class="tnt-parallax tnt-home-design-drawing">
-    <div class="tnt-column">
-        <div class="row tnt-column-text">
-            <span class="tnt-column-text-header">
+    <div class="tnt-divider">
+        <div class="tnt-divider-text">
+            <span class="tnt-divder-text-header">
                 Streamline the design process of a sprinkler system.
             </span>
             <br />
             <br />
-            <span class="tnt-column-text-body">
+            <span class="tnt-divider-text-body">
                 Our specially designed software makes it easy to quickly design a sprinkler
                 system. Our tools are meant to be easy to use and allow for quick editting so
                 you can give your customers exactly what they want. Easily upload an image and
@@ -26,14 +28,14 @@
     </div>
 </div>
 <div class="tnt-parallax tnt-home-design-parts-list">
-    <div class="tnt-column">
-        <div class="row tnt-column-text">
-            <span class="tnt-column-text-header">
+    <div class="tnt-divider">
+        <div class="tnt-divider-text">
+            <span class="tnt-divder-text-header">
                 Provide a parts list with your companies own part codes in common formats such as .csv
             </span>
             <br />
             <br />
-            <span class="tnt-column-text-body">
+            <span class="tnt-divider-text-body">
                 Easily and accuartly generate a parts list instantly, allowing you
                 to make quick edits and give your customers exactly what they need in
                 no time at all.
@@ -42,14 +44,14 @@
     </div>
 </div>
 <div class="tnt-parallax tnt-home-design-complete">
-    <div class="tnt-column">
-        <div class="row tnt-column-text">
-            <span class="tnt-column-text-header">
+    <div class="tnt-divider">
+        <div class="tnt-divider-text">
+            <span class="tnt-divder-text-header">
                 Give your customers a clean and easy to read layout design.
             </span>
             <br />
             <br />
-            <span class="tnt-column-text-body">
+            <span class="tnt-divider-text-body">
                 Our software generates clean looking images that make it incredibly easy to
                 read and follow. Layouts are generated in many common formats such as .png, .jpg, or
                 .pdf.
@@ -59,133 +61,74 @@
 </div>
 
 
+@*Left side column view*@
 
-
-
-
-
-@*<div class="container-fluid">
-        <div class="tnt-img-banner-paralax">
-            <div class="tnt-caption">
-                <span class="tnt-border">Landscape Sprinkler Designer</span>
+@*<div class="tnt-parallax tnt-home-design-drawing">
+        <div class="tnt-column">
+            <div class="row tnt-column-text">
+                <span class="tnt-column-text-header">
+                    Streamline the design process of a sprinkler system.
+                </span>
+                <br />
+                <br />
+                <span class="tnt-column-text-body">
+                    Our specially designed software makes it easy to quickly design a sprinkler
+                    system. Our tools are meant to be easy to use and allow for quick editting so
+                    you can give your customers exactly what they want. Easily upload an image and
+                    add it to the background to make drawing the yard convenient.
+                </span>
             </div>
-        </div>
-
-        <div class="row tnt-image-container">
-            <img class="tnt-img-banner" src="@Url.Content("~/images/banner.png")" />
-            <div class="tnt-text-banner">Landscape Sprinkler Designer</div>
-        </div>
-        <br />
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <img class="tnt-img" src="@Url.Content("~/images/design_drawing.png")" />
-                </div>
-                <div class="col">
-                    <div class="row justify-content-center">
-                        <h5>
-                            Streamline the design process of a sprinkler system.
-                        </h5>
-                    </div>
-                    <div class="row text-center">
-                        <p>
-                            Our specially designed software makes it easy to quickly design a sprinkler
-                            system. Our tools are meant to be easy to use and allow for quick editting so
-                            you can give your customers exactly what they want. Easily upload an image and
-                            add it to the background to make drawing the yard convenient.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <br />
-            <div class="row">
-                <div class="col">
-                    <div class="row justify-content-center">
-                        <h5>
-                            Provide a parts list with your companies own part codes in common formats such as .csv
-                        </h5>
-                    </div>
-                    <div class="row text-center">
-                        <p>
-                            Easily and accuartly generate a parts list instantly, allowing you
-                            to make quick edits and give your customers exactly what they need in
-                            no time at all.
-                        </p>
-                    </div>
-                </div>
-                <div class="col">
-                    <img class="tnt-img" src="@Url.Content("~/images/design_parts_list.png")" />
-                </div>
-            </div>
-            <br />
-            <div class="row">
-                <div class="col">
-                    <img class="tnt-img" src="@Url.Content("~/images/design_complete.png")" />
-                </div>
-                <div class="col">
-                    <div class="row justify-content-center">
-                        <h5>
-                            Give your customers a clean and easy to read layout design.
-                        </h5>
-                    </div>
-                    <div class="row text-center">
-                        <p>
-                            Our software generates clean looking images that make it incredibly easy to
-                            read and follow. Layouts are generated in many common formats such as .png, .jpg, or
-                            .pdf.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <br />
-            <div class="row justify-content-center">
-                <h5>
-                    Find a service that fits your buisness needs.
-                </h5>
-                <div class="text-center">
-                    <p>
-                        We offer many services and tailor them to fit your business needs. From licensing our software so you
-                        can draw the designs for your customers needs or allowing our trained irrigation professionals create
-                        the plans for you. There is a service available for anything you might need. Contact us to learn more.
-                    </p>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <h5>
-                    Contact us here
-                </h5>
-            </div>
-            <div class="row">
-                <div class="col-4"></div>
-                <div class="col-4">
-                    @using (Html.BeginForm())
-                    {
-                        @Html.AntiForgeryToken()
-
-                        <div class="form-group">
-                            @Html.EditorFor(model => model.name, new { htmlAttributes = new { @class = "form-control", placeholder = "Name" } })
-                            @Html.ValidationMessageFor(model => model.name, "", new { @class = "text-danger" })
-                        </div>
-                        <div class="form-group">
-                            @Html.EditorFor(model => model.businessName, new { htmlAttributes = new { @class = "form-control", placeholder = "Business Name (optional)" } })
-                        </div>
-                        <div class="form-group">
-                            @Html.EditorFor(model => model.phoneNumber, new { htmlAttributes = new { @class = "form-control", placeholder = "Phone number" } })
-                            @Html.ValidationMessageFor(model => model.phoneNumber, "", new { @class = "text-danger" })
-                        </div>
-                        <div class="form-group">
-                            @Html.EditorFor(model => model.email, new { htmlAttributes = new { @class = "form-control", placeholder = "Email" } })
-                            @Html.ValidationMessageFor(model => model.email, "", new { @class = "text-danger" })
-                        </div>
-                        <div class="form-group">
-                            @Html.EditorFor(model => model.message, new { htmlAttributes = new { @class = "form-control", placeholder = "Questions and inquiries" } })
-                            @Html.ValidationMessageFor(model => model.message, "", new { @class = "text-danger" })
-                        </div>
-                        <input type="submit" value="Send" class="btn btn-light" />
-                    }
-                </div>
-                <div class="col-4"></div>
-            </div>
-
         </div>
     </div>*@
+@*<div class="tnt-parallax tnt-home-design-parts-list">
+        <div class="tnt-column">
+            <div class="row tnt-column-text">
+                <span class="tnt-column-text-header">
+                    Provide a parts list with your companies own part codes in common formats such as .csv
+                </span>
+                <br />
+                <br />
+                <span class="tnt-column-text-body">
+                    Easily and accuartly generate a parts list instantly, allowing you
+                    to make quick edits and give your customers exactly what they need in
+                    no time at all.
+                </span>
+            </div>
+        </div>
+    </div>*@
+@*<div class="tnt-parallax tnt-home-design-complete">
+        <div class="tnt-column">
+            <div class="row tnt-column-text">
+                <span class="tnt-column-text-header">
+                    Give your customers a clean and easy to read layout design.
+                </span>
+                <br />
+                <br />
+                <span class="tnt-column-text-body">
+                    Our software generates clean looking images that make it incredibly easy to
+                    read and follow. Layouts are generated in many common formats such as .png, .jpg, or
+                    .pdf.
+                </span>
+            </div>
+        </div>
+    </div>*@
+
+<div class="tnt-divider"  style="background-color:#121212">
+    <div class="tnt-divider-text">
+        <span class="tnt-divder-text-header">
+            Find a service that fits your buisness needs.
+        </span>
+        <br />
+        <br />
+        <span class="tnt-divider-text-body">
+            We offer a variety services and can even tailor one to fit your business needs.
+            From licensing our software or allowing our trained irrigation professionals create
+            the plans for you. There is a service available for anything you might need.
+        </span>
+        <br />
+        <br />
+        <br />
+        <br />
+        <a class="btn btn-outline-light" asp-controller="Home" asp-action="About">Learn more</a>
+    </div>
+</div>

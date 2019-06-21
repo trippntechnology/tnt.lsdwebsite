@@ -22,7 +22,7 @@ html, body {
 }
 
 .border-top {
-    border-top: 2px solid #111;
+    border-top: 2px solid #EEE;
 }
 
 .border-bottom {
@@ -55,27 +55,27 @@ button.accept-policy {
 
 .tnt-parallax {
     position: relative;
-    opacity: 0.65;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    height:75%;
 }
 
 .tnt-home-banner-img {
     background-image: url("/images/banner.png");
-    min-height: 500px;
-    background-size: cover;
+    height: 500px;
+    /*background-size: cover;*/
 }
 
 .tnt-home-design-drawing {
     background-image: url("/images/design_drawing.png");
-    height: 100%;
+    height: 75%;
 }
 
 .tnt-home-design-parts-list {
     background-image: url("/images/design_parts_list.png");
-    height: 100%;
+    height: 75%;
 }
 
 .tnt-home-design-complete {
@@ -89,29 +89,49 @@ button.accept-policy {
     top: 35%;
     width: 100%;
     text-align: center;
-    color: #000;
+    color: #fff;
 }
 
     .tnt-caption span.tnt-border {
-        background-image: radial-gradient(rgba(17,17,17,1), rgba(0,0,0,.4));
         color: #fff;
         border-radius: 15px;
         padding: 18px;
         font-size: 3em;
     }
 
+.tnt-divider {
+    padding: 80px 10vw;
+    width: 100%;
+    background-color: rgba(0,0,0,.65);
+    text-align: center;
+}
+
+    .tnt-divider div.tnt-divider-text {
+        color: #fff;
+    }
+
+.tnt-divider-text span.tnt-divder-text-header {
+    font-size: 2em;
+}
+
+.tnt-divider-text span.tnt-divider-text-body {
+    font-size: 1.2em;
+    text-align: justify
+}
+
+
 .tnt-column {
     position: absolute;
     height: inherit;
     padding: 80px 8vw;
     width: 80vw;
-    background-image: linear-gradient(to right, rgba(17,17,17,.7), rgba(0,0,0,0));
+    background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
 }
 
     .tnt-column div.tnt-column-text {
         /*text-shadow: 3px 3px 5px rgba(17,17,17,1);*/
-        text-shadow: -1px -1px 5px rgba(17,17,17,1), 1px -1px 5px rgba(17,17,17,1), -1px 1px 5px rgba(17,17,17,1), 1px 1px 5px rgba(17,17,17,1);
-        color: rgba(255,255,255,1);
+        /*text-shadow: -1px -1px 5px rgba(17,17,17,1), 1px -1px 5px rgba(17,17,17,1), -1px 1px 5px rgba(17,17,17,1), 1px 1px 5px rgba(17,17,17,1);*/
+        color: #fff;
         width: 30vw;
         margin-top: 15%;
     }
@@ -132,8 +152,11 @@ button.accept-policy {
     }
 }
 
-@media (max-width:1350px) {
+@media (max-width:900px) {
     .tnt-parallax {
-        background-size: cover;
+        height:125%;
+    }
+    .tnt-home-banner-img {
+        height: 500px;
     }
 }
